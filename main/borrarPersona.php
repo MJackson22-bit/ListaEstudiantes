@@ -3,23 +3,43 @@ include_once("persona.php");
 include_once("serializarArchivo.php");
 
 $eliminado = false;
-
 if(isset($_GET['id'])){
     $idPersona = $_GET['id'];
-
+    //echo "<h2>". $idPersona."</h2><br>";
     $listarPersonas = serializarArchivo::deserializar();
-    $i = 0;
-
-    foreach($listarPersonas as $personaActual){
+    $personaActual = $listarPersonas[0];
+    //echo "<h2>". $personaActual->carnet." == ". $idPersona."</h2><br>";
+    if($personaActual->carnet == $idPersona){
+        $personaActual = $listarPersonas[0];
+        //echo "<h2>Es igual en la primera</h2>";
+    }else{
+        //echo "<h2>Entra al ciclo</h2>";
+        for($i = 0; $i < count($listarPersonas); $i++){
+            //echo "<h2>". $personaActual->carnet." == ". $idPersona."</h2><br>";
+            //echo "<h2>". $listarPersonas[$i]->carnet." == ". $idPersona."</h2><br>";
+            if($listarPersonas[$i]->carnet == $idPersona){
+                $personaActual = $listarPersonas[$i];
+                break;
+            }   
+        }
+    }
+    
+    //$i = 0;
+    /*foreach($listarPersonas as $personaActual){
         if($listarPersonas[$i]->carnet == $idPersona){
             $personaActual = $listarPersonas[$i];
             break;
         }
         $i++;
-    }
+    }*/
 
 }
-
+/*for($i = 0; $i < count($listaPersonas); $i++){
+        if($listaPersonas[$i]->carnet == $idPersona){
+            $personaActual = $listaPersonas[$i];
+            break;
+        }
+    }*/ 
 ?>
 
 <!doctype html>

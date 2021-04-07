@@ -39,7 +39,7 @@ $listarPersonas = serializarArchivo::deserializar();
                     "<br>Curso: ".$persona->curso.
 
                     "<br><br> <a href='actualizarDatos.php?id=".$persona->carnet."'>Editar</a>" .
-                    "<a href='borrarPersona.php?id='".$persona->carnet."'>Borrar</a>" . 
+                    "<a href='borrarPersona.php?id=".$persona->carnet."'>Borrar</a>" . 
               "</th>".
           "</tr>"
           ;
