@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://kit.fontawesome.com/187a462bee.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../estilo/style.css">
+    <title>Practica 03</title>
+</head>
+
+<body>
+
+    <div class="Container">
+        <div class="Header">
+            <h1>Practica</h1>
+            <h2>Procesamiento de Formularios</h2>
+        </div>
+
+        <div class="Data">
+            <br>
+            <button onclick="MostrarFormulario()" id="A-F">Formulario de Alumnos</button>
+            <br>
+
+            <div class="F-Alumnos" id="F-Alumnos">
+                <div class="F-Header">
+                    <h2>Alumnos</h2>
+                    <i class="far fa-times-circle" onclick="OcultarFormulario()"></i>
+                    <h3>LLene todos los campos del formularios</h3>
+                </div>
+
+                <form action="capturaDatos.php" method="POST" enctype="multipart/form-data" class="box-file">
+                    <label for="correo">Correo Electronico</label><br>
+                    <input type="email" name="correo" id="correo" placeholder="Correo">
+                    <br><br>
+
+                    <label for="nombre">Nombre Completo</label><br>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    <br><br>
+
+                    <label for="carnet">Carnet</label><br>
+                    <input type="text" name="carnet" id="carnet" placeholder="Carnet">
+                    <br><br>
+
+                    <label for="edad">Edad</label><br>
+                    <input type="number" name="edad" id="edad" placeholder="Edad">
+                    <br><br>
+
+                    <label for="curso">Curso</label><br>
+                    <input type="text" name="curso" id="curso" placeholder="Curso">
+                    <br><br>
+
+                    <label for="imagen1">Foto</label><br>
+                    <input type="file" name="imagen1" id="imagen1">
+                    <br><br>
+                    <button type="submit" name="submit">Enviar</button>
+                </form>
+            </div>
+
+            <hr>
+            <a href="listaAlumnos.php" class="button">Listado De Alumnos</a>
+            <hr>
+            <div class="content-data">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="../app/app.js"></script>
+</body>
+
+</html>

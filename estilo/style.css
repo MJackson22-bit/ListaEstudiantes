@@ -1,0 +1,111 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: #f0f0f0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.container{
+    margin: 2em auto;
+    text-align: center;
+    width: 600px;
+}
+.header{
+    background: #3CB1BF;
+    color: #fff;
+    line-height: 45px;
+}
+.data{
+    border-left: 15px solid #3CB1BF;
+    border-right: 15px solid #3CB1BF;
+    background: #fff;
+    width: 80%;
+    margin: auto;
+}
+.data button{
+    background: none;
+    border: 0px;
+    border: 2px solid transparent;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+    transition:all ease-in-out .4s;
+    margin: 10px auto;
+    color: #333;
+    font-weight: bold;
+    font-size: 17px;
+}
+.button{
+    display: inline-block;
+    margin: 10px auto;
+    text-decoration: none;
+    color: #333;
+    transition: all ease-in-out .4s;
+    background: none;
+    border: 2px solid transparent;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+    transition:all ease-in-out .4s;
+    font-size: 17px;
+}
+.data button:hover,.button:hover{
+    border: 2px solid #3CB1BF;
+    border-radius: 10px;
+}
+.F-Alumnos{
+    text-align: initial;
+    padding: 0px 20px;
+    display: none;
+}
+.F-Header{
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.F-Header h2{
+    display: inline;
+}
+.F-Header i{
+    float: right;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    color: red;
+}
+
+.box-file input{
+    border: 2px solid transparent;
+    border-bottom: 2px solid #3CB1BF;
+    margin: 10px auto;
+    padding: 5px;
+    outline: none;
+    background: none;
+    transition: all ease .4s;
+
+}
+.box-file input[type = file]{
+    border: none;
+    background: #3CB1BF;
+    cursor: pointer;
+}
+.box-file input:focus{
+    border: 2px solid #3CB1BF;
+    border-radius: 5px;
+}
+.box-file button{
+    border: 2px solid steelblue;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.box-file button:hover{
+    border: 2px solid transparent;
+    background: #3CB1BF;
+    color: #fff;
+}

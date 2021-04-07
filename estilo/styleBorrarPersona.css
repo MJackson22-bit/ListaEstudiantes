@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: sans-serif;
+    background: #f0f0f0;
+}
+.container{
+    padding: 10px;
+    text-align: center;
+    width: 670px;
+    margin: 1em auto;
+    background: #fff;
+    box-shadow: 1px 3px 10px #999;
+}
+.container h1{
+    margin-bottom: 15px;
+}
+.alumno{
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+}
+.alumno button{
+    background: steelblue;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .3s;
+    font-weight: bold;
+    outline: none;
+    margin-top: 10px;
+}
+.alumno .foto{
+    width: 40%;
+    height: 200px;
+    border-right: 1px solid #999;
+    box-sizing: border-box;
+}
+.alumno .datos{
+    width: 60%;
+    height: 200px;
+    text-align: initial;
+}
+.datos form{
+    margin-left: 30px;
+    line-height: 30px;
+}
+.button{
+    background: steelblue;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 30px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.alumno button:hover,.button:hover{
+    background: #fff;
+    color: #333;
+    border: 2px solid steelblue;
+    cursor: pointer;
+}
+.foto img{
+    width: 120px;
+    height: 150px;
+    box-shadow: 0 0 0 2px #fff,
+                0 0 0 5px #999;
+    box-sizing: border-box;
+    transition: all .4s;
+    margin: 10px auto;
+}
+
+.foto img:hover{
+    transform: rotate(-5deg);
+    box-shadow: 0 0 0 2px #fff,
+                0 0 0 5px pink;
+    cursor: pointer;
+    /* filter:sepia(1) ; */
+}
